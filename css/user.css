@@ -98,18 +98,95 @@ a {
 }
 .user_city {
 	color: #878787;
+	padding: 15px 0;
 }
 .user_intro {
 	color: #353538;
+	padding-bottom: 20px;
 }
 .user_button {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
+.user_button div {
+	width: 220px;
+	border: 1px solid #b8b8b8;
+	padding: 20px 0;
+	border-radius: 8px;
+}
+.user_button div.on {
+	background-color: #ffd202;
+}
+.user_button div:nth-of-type(2) {
+	margin-left: 10px;
+}
 .user_nav {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	height: 60px;
+	line-height: 60px;
+}
+.user_nav div {
+	padding: 0 20px;
+}
+.user_nav i {
+	font-style: normal;
+}
+.user_works {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background: #F4F4F4;
+	padding-bottom: 20px;
+}
+.user_works_item {
+	width: 310px;
+	background: #FFFFFF;
+	margin-top: 23px;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.user_face {
+	width: 310px;
+	height: 240px;
+}
+.user_face img {
+	width: 100%;
+	height: 100%;
+}
+.user_works_title {
+	padding: 14px;
+}
+.user_tags {
+	color: #a7a7a7;
+	padding: 0 14px;
+}
+.user_ext {
+	color: #a7a7a7;
+	text-align: center;
+}
+.user_date {
+	text-align: right;
+	color: #b2b2b2;
+	border-top: 1px solid #f4f4f4;
+	padding: 20px;
+	margin-top: 20px;
+}
+footer {
+	background: #353538;
+	height: 200px;
+
+}
+.common_block {
+	width: 100%;
+	height: 20px;
+}
+.flink a{
+	padding: 0 10px;
 }
