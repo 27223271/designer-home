@@ -2,9 +2,19 @@ html,body {
 	margin: 0;
 	padding: 0;
 	font-size: 14px;
+	background: #f6f6f6;
 }
 a {
 	text-decoration: none;
+	color: #2c352f;
+}
+a:hover, a:visited {
+	color: #2c352f;
+}
+ul,li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 .user_top {
 	width: 100%;
@@ -189,4 +199,89 @@ footer {
 }
 .flink a{
 	padding: 0 10px;
+}
+
+.user_center {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.user_left {
+	margin-top: 20px;
+	flex: 0 0 240px;
+	text-align: center;
+}
+.user_base {
+	width: 100%;
+	background: #FFFFFF;
+	text-align: center;
+	padding: 20px 0;
+}
+.user_headimgurl {
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.user_headimgurl img {
+	width: 100%;
+	height: 100%;
+}
+.user_nickname {
+	font-size: 24px;
+	color: #242a25;
+	padding: 22px 0 44px 0;
+}
+
+.user_menu {
+	margin-top: 20px;
+	background: #FFFFFF;
+}
+.user_menu li {
+	padding: 18px 0;
+	box-sizing: border-box;
+}
+.user_menu li:hover {
+	background: #ebebeb;
+	cursor: pointer;
+	border-left: 4px solid #eb0502;
+}
+.user_menu li.on {
+	background: #ebebeb;
+	border-left: 4px solid #eb0502;
+}
+.user_right {
+	margin-top: 20px;
+	flex: 1;
+	margin-left: 28px;
+	background-color: #FFFFFF;
+}
+.user_message_tab {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-bottom: 1px solid #eeeeee;
+}
+.user_message_tab li {
+	padding: 22px 33px;
+	cursor: pointer;
+}
+.user_message_tab li.on {
+	border-bottom: 2px solid #b0b0b0;
+}
+.user_message_content {
+	
+}
+.user_message_item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.info {
+	margin-left: 20px;
+	color: #666666;
 }
