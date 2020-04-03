@@ -1,66 +1,770 @@
-html,body {
+html,
+body {
 	margin: 0;
 	padding: 0;
 	font-size: 14px;
 	background: #f6f6f6;
 }
+
 a {
 	text-decoration: none;
 	color: #2c352f;
 }
-a:hover, a:visited {
+
+a:hover,
+a:visited {
 	color: #2c352f;
 }
-ul,li {
+
+ul,
+li {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
+
+@font-face {
+	font-family: 'iconfont';
+	/* project id 295498 */
+	src: url('https://at.alicdn.com/t/font_295498_w82eludqwwf.eot');
+	src: url('https://at.alicdn.com/t/font_295498_w82eludqwwf.eot?#iefix') format('embedded-opentype'),
+		url('https://at.alicdn.com/t/font_295498_w82eludqwwf.woff2') format('woff2'),
+		url('https://at.alicdn.com/t/font_295498_w82eludqwwf.woff') format('woff'),
+		url('https://at.alicdn.com/t/font_295498_w82eludqwwf.ttf') format('truetype'),
+		url('https://at.alicdn.com/t/font_295498_w82eludqwwf.svg#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 32upx;
+	font-size: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-price-tag:before {
+	content: "\e673";
+}
+
+.icon-answer:before {
+	content: "\e605";
+}
+
+.icon-app:before {
+	content: "\e606";
+}
+
+.icon-browser:before {
+	content: "\e60a";
+}
+
+.icon-camera:before {
+	content: "\e60c";
+}
+
+.icon-cart:before {
+	content: "\e60e";
+}
+
+.icon-check1:before {
+	content: "\e60f";
+}
+
+.icon-code:before {
+	content: "\e610";
+}
+
+.icon-computer:before {
+	content: "\e612";
+}
+
+.icon-copy:before {
+	content: "\e614";
+}
+
+.icon-delete:before {
+	content: "\e617";
+}
+
+.icon-deliver:before {
+	content: "\e618";
+}
+
+.icon-display:before {
+	content: "\e619";
+}
+
+.icon-down:before {
+	content: "\e61a";
+}
+
+.icon-download:before {
+	content: "\e61b";
+}
+
+.icon-edit1:before {
+	content: "\e61c";
+}
+
+.icon-emoji:before {
+	content: "\e61d";
+}
+
+.icon-enclosure:before {
+	content: "\e61f";
+}
+
+.icon-eraser:before {
+	content: "\e620";
+}
+
+.icon-favor:before {
+	content: "\e621";
+}
+
+.icon-file:before {
+	content: "\e622";
+}
+
+.icon-fill:before {
+	content: "\e624";
+}
+
+.icon-fold:before {
+	content: "\e625";
+}
+
+.icon-folder:before {
+	content: "\e626";
+}
+
+.icon-font:before {
+	content: "\e627";
+}
+
+.icon-hide:before {
+	content: "\e628";
+}
+
+.icon-home:before {
+	content: "\e629";
+}
+
+.icon-information:before {
+	content: "\e62b";
+}
+
+.icon-left:before {
+	content: "\e62c";
+}
+
+.icon-like:before {
+	content: "\e62e";
+}
+
+.icon-link:before {
+	content: "\e62f";
+}
+
+.icon-loading:before {
+	content: "\e630";
+}
+
+.icon-lock:before {
+	content: "\e631";
+}
+
+.icon-mail:before {
+	content: "\e632";
+}
+
+.icon-mark:before {
+	content: "\e633";
+}
+
+.icon-menu:before {
+	content: "\e634";
+}
+
+.icon-message:before {
+	content: "\e636";
+}
+
+.icon-more:before {
+	content: "\e637";
+}
+
+.icon-my:before {
+	content: "\e638";
+}
+
+.icon-notification:before {
+	content: "\e63a";
+}
+
+.icon-order:before {
+	content: "\e64c";
+}
+
+.icon-person2:before {
+	content: "\e658";
+}
+
+.icon-phone1:before {
+	content: "\e659";
+}
+
+.icon-record:before {
+	content: "\e65a";
+}
+
+.icon-refresh:before {
+	content: "\e65b";
+}
+
+.icon-rest:before {
+	content: "\e65c";
+}
+
+.icon-right:before {
+	content: "\e65d";
+}
+
+.icon-ringpause:before {
+	content: "\e65e";
+}
+
+.icon-rotate:before {
+	content: "\e65f";
+}
+
+.icon-roundcheck:before {
+	content: "\e661";
+}
+
+.icon-search:before {
+	content: "\e662";
+}
+
+.icon-service:before {
+	content: "\e663";
+}
+
+.icon-shopping:before {
+	content: "\e664";
+}
+
+.icon-sitting:before {
+	content: "\e665";
+}
+
+.icon-tag:before {
+	content: "\e666";
+}
+
+.icon-telephone:before {
+	content: "\e668";
+}
+
+.icon-todown:before {
+	content: "\e669";
+}
+
+.icon-toleft:before {
+	content: "\e66a";
+}
+
+.icon-toright:before {
+	content: "\e66c";
+}
+
+.icon-top:before {
+	content: "\e66d";
+}
+
+.icon-unfold:before {
+	content: "\e66e";
+}
+
+.icon-unlock:before {
+	content: "\e66f";
+}
+
+.icon-upload:before {
+	content: "\e670";
+}
+
+.icon-video:before {
+	content: "\e671";
+}
+
+.icon-phone:before {
+	content: "\e657";
+}
+
+.icon-person:before {
+	content: "\e655";
+}
+
+.icon-time:before {
+	content: "\e660";
+}
+
+.icon-pen:before {
+	content: "\e611";
+}
+
+.icon-dianhuaben:before {
+	content: "\e6a5";
+}
+
+.icon-collection:before {
+	content: "\e609";
+}
+
+.icon-edit:before {
+	content: "\e62a";
+}
+
+.icon-password:before {
+	content: "\e656";
+}
+
+.icon-fangxingxuanzhongfill:before {
+	content: "\e721";
+}
+
+.icon-fangxingxuanzhong:before {
+	content: "\e722";
+}
+
+.icon-guanbi2fill:before {
+	content: "\e724";
+}
+
+.icon-guanbi2:before {
+	content: "\e725";
+}
+
+.icon-jiahao:before {
+	content: "\e727";
+}
+
+.icon-jiahao1:before {
+	content: "\e728";
+}
+
+.icon-jiahao2fill:before {
+	content: "\e729";
+}
+
+.icon-jianhao:before {
+	content: "\e72a";
+}
+
+.icon-tishifill:before {
+	content: "\e72b";
+}
+
+.icon-tishi:before {
+	content: "\e72c";
+}
+
+.icon-wenhaofill:before {
+	content: "\e72d";
+}
+
+.icon-wenhao:before {
+	content: "\e72e";
+}
+
+.icon-xuanze:before {
+	content: "\e72f";
+}
+
+.icon-yuanxingweixuanzhong:before {
+	content: "\e732";
+}
+
+.icon-yuanxingxuanzhongfill:before {
+	content: "\e730";
+}
+
+.icon-yuanxingxuanzhong:before {
+	content: "\e731";
+}
+
+.icon-biaoxingfill:before {
+	content: "\e733";
+}
+
+.icon-biaoxing:before {
+	content: "\e734";
+}
+
+.icon-liuyanfill:before {
+	content: "\e743";
+}
+
+.icon-liuyan:before {
+	content: "\e744";
+}
+
+.icon-shaixuan1:before {
+	content: "\e74a";
+}
+
+.icon-shanchu1:before {
+	content: "\e74b";
+}
+
+.icon-shizhongfill:before {
+	content: "\e74e";
+}
+
+.icon-shizhong:before {
+	content: "\e74f";
+}
+
+.icon-tongzhifill:before {
+	content: "\e758";
+}
+
+.icon-tongzhi:before {
+	content: "\e759";
+}
+
+.icon-xihuanfill:before {
+	content: "\e760";
+}
+
+.icon-xihuan2:before {
+	content: "\e761";
+}
+
+.icon-xinxifill:before {
+	content: "\e762";
+}
+
+.icon-xinxi:before {
+	content: "\e763";
+}
+
+.icon-androidgengduo:before {
+	content: "\e78d";
+}
+
+.icon-icobodybuilding:before {
+	content: "\e615";
+}
+
+.icon-icobodybuilding1:before {
+	content: "\e616";
+}
+
+.icon-dingwei:before {
+	content: "\e601";
+}
+
+.icon-caidan:before {
+	content: "\e790";
+}
+
+.icon-close-empty:before {
+	content: "\e6c0";
+}
+
+.icon-iccollection:before {
+	content: "\e623";
+}
+
+.icon-add2:before {
+	content: "\e635";
+}
+
+.icon-add:before {
+	content: "\e667";
+}
+
+.icon-add1:before {
+	content: "\e853";
+}
+
+.icon-artboard9-copy:before {
+	content: "\e726";
+}
+
+.icon-house2:before {
+	content: "\e701";
+}
+
+.icon-heart:before {
+	content: "\e66b";
+}
+
+.icon-huifu:before {
+	content: "\e62d";
+}
+
+.icon-bookmark:before {
+	content: "\e60d";
+}
+
+.icon-eye:before {
+	content: "\e723";
+}
+
+.icon-check:before {
+	content: "\e603";
+}
+
+.icon-msg-system:before {
+	content: "\e67a";
+}
+
+.icon-fanhui:before {
+	content: "\e600";
+}
+
+.icon-gengduo:before {
+	content: "\e604";
+}
+
+.icon-close-icon:before {
+	content: "\e613";
+}
+
+.icon-question-answer:before {
+	content: "\e6c6";
+}
+
+.icon-pic:before {
+	content: "\e699";
+}
+
+.icon-time1:before {
+	content: "\e60b";
+}
+
+.icon-shoucang:before {
+	content: "\e86d";
+}
+
+.icon-shoucang1:before {
+	content: "\e86e";
+}
+
+.icon-fenxiang:before {
+	content: "\e86f";
+}
+
+.icon-xiaoxi1:before {
+	content: "\e870";
+}
+
+.icon-xihuan:before {
+	content: "\e871";
+}
+
+.icon-xihuan1:before {
+	content: "\e872";
+}
+
+.icon-zan:before {
+	content: "\e873";
+}
+
+.icon-zan1:before {
+	content: "\e874";
+}
+
+.icon-wenda:before {
+	content: "\e893";
+}
+
+.icon-cehua:before {
+	content: "\e639";
+}
+
+.icon-daoru:before {
+	content: "\e63b";
+}
+
+.icon-guanbi:before {
+	content: "\e63c";
+}
+
+.icon-guanlian:before {
+	content: "\e63d";
+}
+
+.icon-tiaozheng:before {
+	content: "\e63e";
+}
+
+.icon-daochu:before {
+	content: "\e63f";
+}
+
+.icon-fenpei:before {
+	content: "\e640";
+}
+
+.icon-mima:before {
+	content: "\e641";
+}
+
+.icon-rili:before {
+	content: "\e642";
+}
+
+.icon-quanping:before {
+	content: "\e643";
+}
+
+.icon-queren:before {
+	content: "\e644";
+}
+
+.icon-shaixuan:before {
+	content: "\e645";
+}
+
+.icon-shanchu:before {
+	content: "\e646";
+}
+
+.icon-shuaxin:before {
+	content: "\e647";
+}
+
+.icon-shezhi:before {
+	content: "\e648";
+}
+
+.icon-tongbu:before {
+	content: "\e649";
+}
+
+.icon-xiangshang_jiantou:before {
+	content: "\e64a";
+}
+
+.icon-xiangxiajiantou:before {
+	content: "\e64b";
+}
+
+.icon-xiangzuojiantou:before {
+	content: "\e64d";
+}
+
+.icon-xinzeng:before {
+	content: "\e64e";
+}
+
+.icon-xiangyoujiantou:before {
+	content: "\e64f";
+}
+
+.icon-xiaoxi:before {
+	content: "\e650";
+}
+
+.icon-tuichu:before {
+	content: "\e651";
+}
+
+.icon-bianji:before {
+	content: "\e652";
+}
+
+.icon-yonghu:before {
+	content: "\e653";
+}
+
+.icon-sousuo:before {
+	content: "\e654";
+}
+
+.icon-close:before {
+	content: "\e602";
+}
+
+.icon-id:before {
+	content: "\e706";
+}
+
+.icon-yy-verify:before {
+	content: "\e608";
+}
+
+.icon-closeicon:before {
+	content: "\e61e";
+}
+
+.icon-tongwen:before {
+	content: "\e607";
+}
+
+.icon-liwu:before {
+	content: "\e672";
+}
+
 .user_top {
 	width: 100%;
 	height: 70px;
 	background: #cc0000;
 }
+
 .user_logo {
 	width: 133px;
 	height: 35px;
 }
+
 .user_logo img {
 	width: 100%;
 	height: 100%;
 }
+
 .common_center {
 	width: 1150px;
 	height: 70px;
 	margin: 0 auto;
 }
+
 .common_center.flex_row {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
+
 .user_top_nav {
 	display: flex;
 	flex-direction: row;
 	flex: 1;
 	padding-left: 60px;
 }
+
 .user_top_nav a {
 	color: #ffffff;
 	padding: 0 24px;
 }
+
 .user_top_form {
 	flex: 0 0 224px;
 	height: 40px;
 }
+
 .user_top_form input {
 	width: 100%;
 	height: 40px;
 }
+
 .user_login {
 	flex: 0 0 109px;
 	text-align: center;
 }
+
 .user_login a {
 	color: #FFFFFF;
 	font-size: 14px;
@@ -70,67 +774,81 @@ ul,li {
 	width: 100%;
 	height: 320px;
 }
+
 .user_avatar {
 	width: 100%;
 	text-align: center;
 	margin-top: -60px;
 }
-.user_avatar img{
+
+.user_avatar img {
 	width: 121px;
 	height: 121px;
 	border-radius: 100%;
 	overflow: hidden;
 	border: 5px solid #FFFFFF;
 }
+
 .user_info {
 	text-align: center;
 }
+
 .user_nickname {
 	font-size: 32px;
 	font-weight: 600;
-	
+
 }
+
 .user_share {
 	text-align: center;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
+
 .user_share_item {
 	width: 24px;
 	height: 24px;
 	overflow: hidden;
 	border-radius: 50%;
 }
+
 .user_share_item img {
 	width: 100%;
 	height: 100%;
 }
+
 .user_city {
 	color: #878787;
 	padding: 15px 0;
 }
+
 .user_intro {
 	color: #353538;
 	padding-bottom: 20px;
 }
+
 .user_button {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
+
 .user_button div {
 	width: 220px;
 	border: 1px solid #b8b8b8;
 	padding: 20px 0;
 	border-radius: 8px;
 }
+
 .user_button div.on {
 	background-color: #ffd202;
 }
+
 .user_button div:nth-of-type(2) {
 	margin-left: 10px;
 }
+
 .user_nav {
 	width: 100%;
 	display: flex;
@@ -139,12 +857,15 @@ ul,li {
 	height: 60px;
 	line-height: 60px;
 }
+
 .user_nav div {
 	padding: 0 20px;
 }
+
 .user_nav i {
 	font-style: normal;
 }
+
 .user_works {
 	width: 80%;
 	margin: 0 auto;
@@ -155,32 +876,38 @@ ul,li {
 	background: #F4F4F4;
 	padding-bottom: 20px;
 }
+
 .user_works_item {
 	width: 310px;
-	background: #FFFFFF;
-	margin-top: 23px;
 	border-radius: 4px;
 	overflow: hidden;
+
 }
+
 .user_face {
 	width: 310px;
 	height: 240px;
 }
+
 .user_face img {
 	width: 100%;
 	height: 100%;
 }
+
 .user_works_title {
 	padding: 14px;
 }
+
 .user_tags {
 	color: #a7a7a7;
 	padding: 0 14px;
 }
+
 .user_ext {
 	color: #a7a7a7;
 	text-align: center;
 }
+
 .user_date {
 	text-align: right;
 	color: #b2b2b2;
@@ -188,16 +915,19 @@ ul,li {
 	padding: 20px;
 	margin-top: 20px;
 }
+
 footer {
 	background: #353538;
 	height: 200px;
 
 }
+
 .common_block {
 	width: 100%;
 	height: 20px;
 }
-.flink a{
+
+.flink a {
 	padding: 0 10px;
 }
 
@@ -208,17 +938,20 @@ footer {
 	flex-direction: row;
 	justify-content: space-between;
 }
+
 .user_left {
 	margin-top: 20px;
 	flex: 0 0 240px;
 	text-align: center;
 }
+
 .user_base {
 	width: 100%;
 	background: #FFFFFF;
 	text-align: center;
 	padding: 20px 0;
 }
+
 .user_headimgurl {
 	width: 110px;
 	height: 110px;
@@ -226,10 +959,12 @@ footer {
 	overflow: hidden;
 	margin: 0 auto;
 }
+
 .user_headimgurl img {
 	width: 100%;
 	height: 100%;
 }
+
 .user_nickname {
 	font-size: 24px;
 	color: #242a25;
@@ -240,25 +975,30 @@ footer {
 	margin-top: 20px;
 	background: #FFFFFF;
 }
+
 .user_menu li {
 	padding: 18px 0;
 	box-sizing: border-box;
 }
+
 .user_menu li:hover {
 	background: #ebebeb;
 	cursor: pointer;
 	border-left: 4px solid #eb0502;
 }
+
 .user_menu li.on {
 	background: #ebebeb;
 	border-left: 4px solid #eb0502;
 }
+
 .user_right {
 	margin-top: 20px;
 	flex: 1;
 	margin-left: 28px;
 	background-color: #FFFFFF;
 }
+
 .user_message_tab {
 	width: 100%;
 	display: flex;
@@ -266,22 +1006,159 @@ footer {
 	align-items: center;
 	border-bottom: 1px solid #eeeeee;
 }
+
 .user_message_tab li {
 	padding: 22px 33px;
 	cursor: pointer;
 }
+
 .user_message_tab li.on {
 	border-bottom: 2px solid #b0b0b0;
 }
-.user_message_content {
-	
-}
+
+.user_message_content {}
+
 .user_message_item {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	padding: 50px 0;
 }
+
+.user_message_item:not(:first-child) {
+	border-top: 1px solid #F4F4F4;
+}
+
+.user_message_item .avatar {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-left: 35px;
+}
+
+.user_message_item .avatar img {
+	width: 100%;
+	height: 100%;
+}
+
 .info {
 	margin-left: 20px;
 	color: #666666;
+}
+
+.info div:nth-of-type(2) {
+	padding: 10px 0;
+}
+
+.info i {
+	font-style: normal;
+	margin-left: 20px;
+	color: #989898;
+}
+
+.info div:last-child {
+	color: #989898;
+	cursor: pointer;
+}
+
+.user_favorite_bookmark {
+	padding: 38px 0;
+}
+.bookmark_item {
+	width: 25%;
+	display: inline-block;
+	margin-left: 20px;
+}
+.bookmark_item_pic {
+	width: 100%;
+	height: 172px;
+}
+.bookmark_item_pic img {
+	width: 100%;
+	height: 100%;
+}
+.user_bookmark_title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 8px 0;
+	justify-content: center;
+}
+.user_bookmark_title div:last-child {
+	margin-left: 10px;
+}
+.user_works_status {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	border-bottom: 1px solid #F4F4F4;
+}
+.user_works_status .left {
+	flex: 1;
+	margin-left: 28px;
+}
+.user_works_status .left .on {
+	background: #DF361F;
+	color: #FFFFFF;
+	border-radius: 4px;
+}
+.user_works_status .left a {
+	padding: 7px 10px;
+}
+.user_works_status .left a:not(:last-child) {
+	margin-right: 17px;
+}
+.user_works_status .add {
+	width: 110px;
+	height: 28px;
+	background: #df361f;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-align: center;
+	line-height: 28px;
+	margin-right: 30px;
+	cursor: pointer;
+}
+.user_works_group {
+	padding: 30px 0 30px 20px;
+}
+.user_works_item {
+	width: 28%;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 10px;
+	border: 1px solid #F4F4F4;
+}
+.user_works_face {
+	width: 100%;
+	height: 180px;
+}
+.user_works_face img {
+	width: 100%;
+	height: 100%;
+}
+.user_works_title {
+	padding: 30px 0;
+	text-align: center;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+.user_works_type {
+	padding: 13px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: #989898;
+}
+.user_works_num {
+	color: #989898;
+}
+.user_works_num span {
+	color: #fd3300;
+	padding: 0 3px;
 }
